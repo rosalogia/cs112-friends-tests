@@ -31,10 +31,10 @@ you are on Mac or Linux, the script is simply called `runtests`. If you are on W
 
 On Mac and Linux, you may execute the script via the following command:
 ```
-./runtests
+./gradlew test
 ```
 
 On Windows, use
 ```
-.\runtests.bat
+.\gradlew.bat test
 ```

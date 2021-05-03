@@ -13,10 +13,10 @@ public class FriendsApp {
 			return;
 		} */
 
-		/* System.out.print("Enter the path of a graph text file: ");
+		System.out.print("Enter the path of a graph text file: ");
 		var scanner = new Scanner(System.in);
-		String filename = scanner.nextLine(); */
-		String filename = "./sampleGraph.txt";
+		String filename = scanner.nextLine();
+		
 		try {
 			Graph g = new Graph(new Scanner(new File(filename)));
 
@@ -25,12 +25,6 @@ public class FriendsApp {
 			String p1 = "sam";
 			String p2 = "sergei";
 			ArrayList<String> shortestChain = Friends.shortestChain(g, p1, p2);
-
-			var paths = Friends.allPaths(g);
-
-			for (ArrayList<Integer> path : paths) {
-				System.out.println(path);
-			}
 
 			// Testing Friends.shortestChain
 			System.out.println("Shortest chain from " + p1 + " to " + p2);

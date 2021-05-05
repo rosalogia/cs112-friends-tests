@@ -73,6 +73,8 @@ public class CliqueTest {
             Assertions.assertThat(cliques).isEmpty();
             return;
         }
+        
+        Assertions.assertThat(cliques).isNotNull();
 
         for (ArrayList<String> clique : cliques) {
             HashSet<String> cliqueSet = new HashSet<>(clique);
